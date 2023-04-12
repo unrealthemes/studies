@@ -1,0 +1,310 @@
+/*!
+Theme Name: unreal-themes
+Author: Bondarenko Roman
+Author URI: https://unrealthemes.site/
+Description: Description
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: unreal-themes
+*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Response cf7 */
+div.wpcf7-validation-errors {
+    background: #F44336;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+div.wpcf7-mail-sent-ok {
+    background: #2cb742;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+div.wpcf7-spam-blocked {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+div.wpcf7-mail-sent-ok::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #2cb742;
+    border-left: 10px solid #2cb742;
+}
+
+div.wpcf7-validation-errors::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f44336;
+    border-left: 10px solid #f44336;
+}
+
+div.wpcf7-spam-blocked::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #ffa500;
+    border-left: 10px solid #ffa500;
+}
+/* END: Response cf7 */
+
+/* .current-menu-item */
+
+.pagination .current {
+    background: #4C90FD;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.category-books p {
+    line-height: 1.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.book-text br,
+.category-books br { 
+    display:none; 
+}
+
+#ez-toc-container {
+    background: #F6F8FC;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+
+div#ez-toc-container {
+    border: none;
+}
+
+#ez-toc-container ul ul, 
+.ez-toc div.ez-toc-widget-container ul ul {
+    margin-left: 0.5em;
+}
+
+#ez-toc-container ul li {
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+#ez-toc-container a {
+    font-weight: 400;
+}
+
+.error-body {
+    text-align: center;
+}
+
+.error-body h1 {
+    font-size: 210px;
+    font-weight: 900;
+    line-height: 210px;
+}
+
+.error-body h3 {
+    font-size: 24px;
+}
+
+.error-body h1,
+.error-body h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #373f52;
+    border-color: #373f52;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #454e64;
+    border-color: #373f52;
+}
+
+/* .title-h1 {
+    display: none;
+} */
+
+@media screen and (max-width: 767px) {
+
+    .single-pagination .single-pagination__prev {
+        text-align: left;
+    }
+
+    .single-pagination .single-pagination__prev a {
+        margin-left: 25px
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .error-body h1 {
+        font-size: 150px;
+    }
+}
+
+/* .book-text img, 
+.category-books img {
+    display: inline-block !important;
+} */
+
+.book-text p span a[rel="nofollow"] {
+    display: none;
+}
+
+
+.modal-target {
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .modal-target:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    align-items: center;
+    /* padding-top: 100px;  */
+    left: 0;
+    bottom: 0;
+    top: 80px;
+    width: 100%; 
+    /* height: 100vh;  */
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8); 
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    /* width: 80%; */
+    opacity: 1 !important;
+    /* max-width: 1200px; */
+  }
+  
+  /* Caption of Modal Image */
+  .modal-caption {
+    margin: auto;
+    display: block;
+    /* width: 80%; */
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+  }
+  
+  /* Add Animation */
+  .modal-content, .modal-caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }

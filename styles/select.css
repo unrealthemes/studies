@@ -1,0 +1,190 @@
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #E7E0DE;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  height: 48px;
+  line-height: 46px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 55px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: 500;
+}
+.nice-select .current {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nice-select:after {
+  content: "";
+  display: block;
+  background: url(../images/arrow-select-2.svg) 0 0 no-repeat;
+  height: 7px;
+  margin-top: -2px;
+  pointer-events: none;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform-origin: center center;
+  transform: rotate(0);
+  transition: all 0.15s ease-in-out;
+  width: 12px;
+}
+.nice-select:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 46px;
+  top: 0;
+  bottom: 0;
+  background: #F9F6F4;
+  border-left: 1px solid #E7E0DE;
+  border-radius: 0 3px 3px 0;
+}
+.nice-select.niceSelect-style-dark {
+  border: 1px solid #402A18;
+  font-size: 14px;
+  height: 38px;
+  line-height: 36px;
+}
+.nice-select.niceSelect-style-dark:after {
+  background: url(../images/arrow-select.svg) 0 0 no-repeat;
+  right: 11px;
+  margin-top: -3px;
+}
+.nice-select.niceSelect-style-dark:before {
+  display: none;
+}
+.nice-select.niceSelect-style-dark .list {
+  border-color: #402A18;
+}
+.nice-select.open {
+  border-radius: 3px 3px 0 0;
+}
+.nice-select.open:after {
+  transform: rotate(-180deg);
+}
+.nice-select.open:before {
+  background: #EEE9E5;
+  border-radius: 0 3px 0 0;
+}
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+.nice-select.disabled {
+  border-color: #ededed;
+  color: #999;
+  pointer-events: none;
+}
+.nice-select.disabled:after {
+  border-color: #724b3c;
+}
+.nice-select.wide {
+  width: 100%;
+}
+.nice-select.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+.nice-select.right {
+  float: right;
+}
+.nice-select.right .list {
+  left: auto;
+  right: 0;
+}
+.nice-select.small {
+  font-size: 12px;
+  height: 36px;
+  line-height: 34px;
+}
+.nice-select.small:after {
+  height: 4px;
+  width: 4px;
+}
+.nice-select.small .option {
+  line-height: 34px;
+  min-height: 34px;
+}
+.nice-select .list {
+  border: 1px solid #E7E0DE;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  left: -1px;
+  right: -1px;
+  background-color: #fff;
+  padding: 11px 0;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+  margin-top: 1px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  transform-origin: 50% 0;
+  transform: scale(0.75) translateY(-24px);
+  z-index: 700;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 203px;
+}
+.nice-select .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+.nice-select .list::-webkit-scrollbar-button {
+  width: 3px;
+  height: 0px;
+}
+.nice-select .list::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-left: 1px solid #fff;
+  border-radius: 0;
+}
+.nice-select .list::-webkit-scrollbar-thumb {
+  background: #D3CCC6;
+  border-radius: 10px;
+}
+.nice-select .list::-webkit-resizer {
+  width: 3px;
+  height: 0px;
+}
+.nice-select .list::-webkit-scrollbar {
+  width: 3px;
+}
+.nice-select .option {
+  cursor: pointer;
+  line-height: 32px;
+  list-style: none;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 26px;
+  text-align: left;
+  transition: all 0.2s;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+  background: #FCF6DF;
+}
+.nice-select .option.disabled {
+  background-color: transparent;
+  cursor: default;
+}
